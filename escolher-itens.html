@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monte sua Cesta</title>
+  <link rel="stylesheet" href="../style.css" />
+    <a href="beneficios.html" class="botao">BENEFÍCIOS</a>
+    <a href="index.html" class="botao">INÍCIO</a>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #4CAF50;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .categoria {
+      margin-bottom: 2rem;
+    }
+
+    .categoria h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .itens {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .item {
+      flex: 1 1 120px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .item input {
+      margin-right: 5px;
+    }
+
+    .botao-finalizar {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      background-color:#4CAF50;
+      color: white;
+      border: none; ;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .botao-finalizar:hover {
+      background-color:#45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>MONTE SUA CESTA</h1>
+<section>
+  <h2>Frutas</h2>
+  <div class="itens-container">
+    <label><input type="checkbox" value="Abacate" /> Abacate</label>
+    <label><input type="checkbox" value="Abacaxi" /> Abacaxi</label>
+    <label><input type="checkbox" value="Acerola" /> Acerola</label>
+    <label><input type="checkbox" value="Banana" /> Banana</label>
+    <label><input type="checkbox" value="Caqui" /> Caqui</label>
+    <label><input type="checkbox" value="Carambola" /> Carambola</label>
+    <label><input type="checkbox" value="Jabuticaba" /> Jabuticaba</label>
+    <label><input type="checkbox" value="Laranja" /> Laranja</label>
+    <label><input type="checkbox" value="Limão" /> Limão</label>
+    <label><input type="checkbox" value="Maçã" /> Maçã</label>
+    <label><input type="checkbox" value="Mamão" /> Mamão</label>
+    <label><input type="checkbox" value="Manga" /> Manga</label>
+    <label><input type="checkbox" value="Maracujá" /> Maracujá</label>
+    <label><input type="checkbox" value="Melancia" /> Melancia</label>
+    <label><input type="checkbox" value="Melão" /> Melão</label>
+    <label><input type="checkbox" value="Morango" /> Morango</label>
+    <label><input type="checkbox" value="Pera" /> Pera</label>
+    <label><input type="checkbox" value="Ponkan" /> Ponkan</label>
+    <label><input type="checkbox" value="Uva" /> Uva</label>
+  </div>
+</section>
+<section>
+  <h2>Legumes</h2>
+  <div class="itens-container">
+    <label><input type="checkbox" value="Abóbora" /> Abóbora</label>
+    <label><input type="checkbox" value="Abobrinha" /> Abobrinha</label>
+    <label><input type="checkbox" value="Batata" /> Batata</label>
+    <label><input type="checkbox" value="Batata-doce" /> Batata-doce</label>
+    <label><input type="checkbox" value="Beterraba" /> Beterraba</label>
+    <label><input type="checkbox" value="Cenoura" /> Cenoura</label>
+    <label><input type="checkbox" value="Chuchu" /> Chuchu</label>
+    <label><input type="checkbox" value="Ervilha" /> Ervilha</label>
+    <label><input type="checkbox" value="Inhame" /> Inhame</label>
+    <label><input type="checkbox" value="Jiló" /> Jiló</label>
+    <label><input type="checkbox" value="Mandioquinha" /> Mandioquinha</label>
+    <label><input type="checkbox" value="Mandioca" /> Mandioca</label>
+    <label><input type="checkbox" value="Nabo" /> Nabo</label>
+    <label><input type="checkbox" value="Pepino" /> Pepino</label>
+    <label><input type="checkbox" value="Pimentão" /> Pimentão</label>
+    <label><input type="checkbox" value="Quiabo" /> Quiabo</label>
+    <label><input type="checkbox" value="Tomate" /> Tomate</label>
+    <label><input type="checkbox" value="Vagem" /> Vagem</label>
+  </div>
+</section>
+<section>
+  <h2>Hortaliças</h2>
+  <div class="itens-container">
+    <label><input type="checkbox" value="Acelga" /> Acelga</label>
+    <label><input type="checkbox" value="Agrião" /> Agrião</label>
+    <label><input type="checkbox" value="Alface" /> Alface</label>
+    <label><input type="checkbox" value="Almeirão" /> Almeirão</label>
+    <label><input type="checkbox" value="Brócolis" /> Brócolis</label>
+    <label><input type="checkbox" value="Cheiro Verde" /> Cheiro Verde</label>
+    <label><input type="checkbox" value="Chicória" /> Chicória</label>
+    <label><input type="checkbox" value="Couve" /> Couve</label>
+    <label><input type="checkbox" value="Couve-flor" /> Couve-flor</label>
+    <label><input type="checkbox" value="Escarola" /> Escarola</label>
+    <label><input type="checkbox" value="Espinafre" /> Espinafre</label>
+    <label><input type="checkbox" value="Repolho" /> Repolho</label>
+    <label><input type="checkbox" value="Rúcula" /> Rúcula</label>
+    <label><input type="checkbox" value="Salsa" /> Salsa</label>
+    <label><input type="checkbox" value="Salsão" /> Salsão</label>
+    <label><input type="checkbox" value="Mostarda" /> Mostarda</label>
+    <label><input type="checkbox" value="Ora-pro-nóbis" /> Ora-pro-nóbis</label>
+  </div>
+</section>
+
+<section>
+  <h2>Temperos</h2>
+  <div class="itens-container">
+    <label><input type="checkbox" value="Alecrim" /> Alecrim</label>
+    <label><input type="checkbox" value="Alho" /> Alho</label>
+    <label><input type="checkbox" value="Cebolinha" /> Cebolinha</label>
+    <label><input type="checkbox" value="Coentro" /> Coentro</label>
+    <label><input type="checkbox" value="Hortelã" /> Hortelã</label>
+    <label><input type="checkbox" value="Louro" /> Louro</label>
+    <label><input type="checkbox" value="Manjericão" /> Manjericão</label>
+    <label><input type="checkbox" value="Orégano" /> Orégano</label>
+    <label><input type="checkbox" value="Pimenta" /> Pimenta</label>
+    <label><input type="checkbox" value="Salsinha" /> Salsinha</label>
+    <label><input type="checkbox" value="Tomilho" /> Tomilho</label>
+  </div>
+</section>
+
+<button class="botao-finalizar" onclick="enviarCestaPorWhatsApp()">Finalizar Cesta</button>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Da Roça Para Você. Todos os direitos reservados.</p>
+  </footer>
+
+<script>
+  function enviarCestaPorWhatsApp() {
+    const selecionados = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+      .map(el => el.parentElement.textContent.trim());
+
+    if (selecionados.length === 0) {
+      alert("Por favor, selecione ao menos um item.");
+      return;
+    }
+
+    const mensagem = `Olá! Gostaria de montar a seguinte cesta:\n\n${selecionados.join('\n')}`;
+    const numero = "5541991440629"; // número com DDI
+
+    alert("Sua cesta foi montada! Você será redirecionado para o WhatsApp.");
+
+    // Redirecionamento para WhatsApp
+    const url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+    window.open(url, "_blank");
+  }
+</script>
+
+
+</body>
+</html>
