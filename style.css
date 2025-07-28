@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-color: #72c775;
   padding: 15px;
   text-align: center;
 }
@@ -60,7 +60,7 @@ header {
   color: white;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 13px;
   margin-top: 20px;
 }
 
@@ -73,13 +73,13 @@ footer {
 
 
 .beneficio {
-  background-color: #ffffff10;
+  background-color: #72c775;
   border: 1px solid #ffffff30;
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
   color: white;
-  box-shadow: 0 0 10px #ffffff20;
+  box-shadow: 0 0 10px #72c775;
 }
 
 h2, h3 {
@@ -94,14 +94,14 @@ h2, h3 {
 }
 
 .item {
-  background-color: #ffffff10;
-  border: 1px solid #ffffff30;
+  background-color: #4CAF50;
+  border: 1px solid #45a049;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
   width: 180px; /* ajuste conforme seu gosto */
   color: white;
-  box-shadow: 0 0 8px #ffffff20;
+  box-shadow: 0 0 8px #4caf50;
   flex: 1 1 150px;
 }
 
