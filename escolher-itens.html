@@ -2,80 +2,184 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monte sua Cesta</title>
-  <link rel="stylesheet" href="../style.css" />
-    <a href="beneficios.html" class="botao">BENEFÍCIOS</a>
-    <a href="escolher-cadastro.html" class="botao">CADASTRO</a>
-     <a href="index.html" class="botao">INÍCIO</a>
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Escolher Itens da Horta</title>
+  
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #4CAF50;
+      font-family: Arial, sans-serif;
+      background-color: #4caf50;
       margin: 0;
-      padding: 1rem;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-
-    .categoria {
-      margin-bottom: 2rem;
-    }
-
-    .categoria h2 {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-      color: #333;
-    }
-
-    .itens {
+      padding: 0;
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
     }
 
-    .item {
-      flex: 1 1 120px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 10px;
+    header {
+      background-color: #45a049;
+      width: 100%;
+      padding: 15px 0;
       text-align: center;
     }
 
-    .item input {
-      margin-right: 5px;
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
     }
 
-    .botao-finalizar {
-      display: block;
-      margin: 2rem auto;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      background-color:#4CAF50;
-      color: white;
-      border: none; ;
+    main {
+      background-color: #45a049;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #fff;
+    }
+
+    .itens-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 8px;
       border-radius: 5px;
-      cursor: pointer;
     }
 
-    .botao-finalizar:hover {
-      background-color:#45a049;
+    button {
+      background-color: #fff;
+      color: #45a049;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s;
+      width: 100%;
     }
-  </style>
+
+    button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .voltar {
+      display: inline-block;
+      margin-top: 10px;
+      text-align: center;
+      color: #fff;
+      text-decoration: underline;
+      font-size: 0.9em;
+    }
+  
+  nav {
+    background-color: #4caf50;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .botao {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .botao:hover {
+    background-color: #3e8e41;
+  }
+  footer {
+      background-color: #ddd;
+      color: #333;
+      text-align: center;
+      padding: 3px;
+    }
+
+ </style>
+
 </head>
 <body>
-  <h1>MONTE SUA CESTA</h1>
+  <header>
+    <h1>Escolha seus itens da Horta</h1>
+  </header>
+ <nav>
+    <a href="beneficios.html" class="botao">BENEFÍCIOS</a>
+    <a href="index.html" class="botao">INICIO</a>
+    <a href="escolher-cadastro.html" class="botao">CADASTRO</a>
+  </nav>
+  <main>
+    <form id="form-itens">
+      <h2>Legumes</h2>
+<div class="itens-container">
+    <label><input type="checkbox" value="Abóbora" /> Abóbora</label>
+    <label><input type="checkbox" value="Abobrinha" /> Abobrinha</label>
+    <label><input type="checkbox" value="Batata" /> Batata</label>
+    <label><input type="checkbox" value="Batata-doce" /> Batata-doce</label>
+    <label><input type="checkbox" value="Beterraba" /> Beterraba</label>
+    <label><input type="checkbox" value="Cenoura" /> Cenoura</label>
+    <label><input type="checkbox" value="Chuchu" /> Chuchu</label>
+    <label><input type="checkbox" value="Ervilha" /> Ervilha</label>
+    <label><input type="checkbox" value="Inhame" /> Inhame</label>
+    <label><input type="checkbox" value="Jiló" /> Jiló</label>
+    <label><input type="checkbox" value="Mandioquinha" /> Mandioquinha</label>
+    <label><input type="checkbox" value="Mandioca" /> Mandioca</label>
+    <label><input type="checkbox" value="Nabo" /> Nabo</label>
+    <label><input type="checkbox" value="Pepino" /> Pepino</label>
+    <label><input type="checkbox" value="Pimentão" /> Pimentão</label>
+    <label><input type="checkbox" value="Quiabo" /> Quiabo</label>
+    <label><input type="checkbox" value="Tomate" /> Tomate</label>
+    <label><input type="checkbox" value="Vagem" /> Vagem</label>
+  </div>
+</section>
+<h2>Hortaliças</h2>
+  <div class="itens-container">
+    <label><input type="checkbox" value="Acelga" /> Acelga</label>
+     <label><input type="checkbox" value="Aipo" /> Aipo</label>
+    <label><input type="checkbox" value="Agrião" /> Agrião</label>
+    <label><input type="checkbox" value="Alface" /> Alface</label>
+    <label><input type="checkbox" value="Almeirão" /> Almeirão</label>
+    <label><input type="checkbox" value="Brócolis" /> Brócolis</label>
+    <label><input type="checkbox" value="Cheiro Verde" /> Cheiro Verde</label>
+    <label><input type="checkbox" value="Chicória" /> Chicória</label>
+    <label><input type="checkbox" value="Couve" /> Couve</label>
+    <label><input type="checkbox" value="Couve-flor" /> Couve-flor</label>
+    <label><input type="checkbox" value="Escarola" /> Escarola</label>
+    <label><input type="checkbox" value="Espinafre" /> Espinafre</label>
+    <label><input type="checkbox" value="Repolho" /> Repolho</label>
+    <label><input type="checkbox" value="Rúcula" /> Rúcula</label>
+    <label><input type="checkbox" value="Salsa" /> Salsa</label>
+    <label><input type="checkbox" value="Salsão" /> Salsão</label>
+    <label><input type="checkbox" value="Mostarda" /> Mostarda</label>
+    <label><input type="checkbox" value="Ora-pro-nóbis" /> Ora-pro-nóbis</label>
+  </div>
+</section>
 <section>
   <h2>Frutas</h2>
   <div class="itens-container">
     <label><input type="checkbox" value="Abacate" /> Abacate</label>
     <label><input type="checkbox" value="Abacaxi" /> Abacaxi</label>
-    <label><input type="checkbox" value="Acerola" /> Acerola</label>
     <label><input type="checkbox" value="Banana" /> Banana</label>
     <label><input type="checkbox" value="Caqui" /> Caqui</label>
     <label><input type="checkbox" value="Carambola" /> Carambola</label>
@@ -94,8 +198,7 @@
     <label><input type="checkbox" value="Uva" /> Uva</label>
   </div>
 </section>
-<section>
-  <h2>Legumes</h2>
+<h2>Legumes</h2>
   <div class="itens-container">
     <label><input type="checkbox" value="Abóbora" /> Abóbora</label>
     <label><input type="checkbox" value="Abobrinha" /> Abobrinha</label>
@@ -121,6 +224,7 @@
   <h2>Hortaliças</h2>
   <div class="itens-container">
     <label><input type="checkbox" value="Acelga" /> Acelga</label>
+     <label><input type="checkbox" value="Aipo" /> Aipo</label>
     <label><input type="checkbox" value="Agrião" /> Agrião</label>
     <label><input type="checkbox" value="Alface" /> Alface</label>
     <label><input type="checkbox" value="Almeirão" /> Almeirão</label>
@@ -152,6 +256,7 @@
     <label><input type="checkbox" value="Manjericão" /> Manjericão</label>
     <label><input type="checkbox" value="Orégano" /> Orégano</label>
     <label><input type="checkbox" value="Pimenta" /> Pimenta</label>
+    <label><input type="checkbox" value="Pimenta Cambuci" /> Pimenta Cambuci</label>
     <label><input type="checkbox" value="Salsinha" /> Salsinha</label>
     <label><input type="checkbox" value="Tomilho" /> Tomilho</label>
   </div>
@@ -183,7 +288,6 @@
     window.open(url, "_blank");
   }
 </script>
-
-
 </body>
 </html>
+
