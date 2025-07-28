@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Agricultor</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f8f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer {
+      background-color: #3d8b5f;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #3d8b5f;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #3d8b5f;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #2f6c49;
+    }
+
+    .botao-voltar {
+      display: inline-block;
+      background-color: #ccc;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .botao-voltar:hover {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Da Roça Para Você</h1>
+  </header>
+
+  <main>
+    <a href="index.html" class="botao-voltar">← Voltar para o Início</a>
+
+    <h2>Cadastro de Agricultor</h2>
+    <form action="#" method="post">
+      <label for="nome">Nome do agricultor:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="propriedade">Nome da propriedade ou sítio:</label>
+      <input type="text" id="propriedade" name="propriedade" required>
+
+      <label for="telefone">Telefone / WhatsApp:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="localizacao">Localização (comunidade, bairro, cidade):</label>
+      <input type="text" id="localizacao" name="localizacao" required>
+
+      <label for="produtos">Principais produtos cultivados:</label>
+      <textarea id="produtos" name="produtos" rows="3" required></textarea>
+
+      <label for="tipo">Tipo de produção:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione...</option>
+        <option value="organica">Orgânica</option>
+        <option value="convencional">Convencional</option>
+        <option value="agroecologica">Agroecológica</option>
+        <option value="outros">Outros</option>
+      </select>
+
+      <label for="observacoes">Observações adicionais:</label>
+      <textarea id="observacoes" name="observacoes" rows="3"></textarea>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Da Roça Para Você</p>
+  </footer>
+
+</body>
+</html>
